@@ -7,7 +7,12 @@ const hbs = require('ejs');
 const Archive = require('./src/models/register');
 const connect = require('./src/db/conn');
 const { MongooseDocument } = require('mongoose');
+const favicon = require('serve-favicon');
 app.set('view engine','ejs');
+
+
+app.use(favicon(__dirname+'/public/favicon/favicon.ico'))
+
 
 app.use(express.urlencoded({extended:false}));
 
