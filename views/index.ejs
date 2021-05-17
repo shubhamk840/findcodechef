@@ -12,15 +12,33 @@
 
 
   <div>
-    <h1 class="mainttl">Find Any CodeChef User</h1>
+    <h1 class="mainttl">Find Any User By their User Id </h1>
   </div>
 <div class="fillups">
-<form action="/register" method="post">
+<form action="/register" method="post" target="_blank">
+ 
   <h1 class="Title">Enter The UserName You Are Looking For</h1>
-
   <input type="text" id="fname" name="fname"><br><br>
-  <input class="Bbutton" type="submit" value="Find"> <br><br>
+  <label for="platform" style="color: brown;">Choose a platform:</label>
+
+  
+    <select class="menu" name="platform" id="platform">
+      <option value="atcoder">Atcoder</option>
+      <option value="codeforces">Codeforces</option>
+      <option value="codechef">Codechef</option>
+    </select>
+
+
+<br>
+<br>
+
+  <input class="button" type="submit" value="Find"> 
 </form>
+
+
+
+
+  
 
 </div>
 
